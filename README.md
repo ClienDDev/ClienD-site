@@ -10,5 +10,5 @@
 
 ## Лицензия
 
-Код написан [Атнагуловым Артуром](artur@clienddev.ru) и [Мустафиным Тимуром](timur@clienddev.ru) при поддержке 
+Код написан [Атнагуловым Артуром](http://i.atnartur.ru) и [Мустафиным Тимуром](timur.clienddev.ru) при поддержке 
 [ClienDDev team](http://clienddev.ru) под лицензией MIT.

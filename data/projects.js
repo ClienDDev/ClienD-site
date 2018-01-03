@@ -25,7 +25,6 @@ const andrew = {
 
 const projects = {
     'ClienD backend': {
-        'link': 'http://cliend.ru',
         'text': '<p>Занимается парсингом, сжатием, подготовкой данных для мобильных приложений (API).</p>',
         'tech': 'nginx, PHP5, MySQL (Percona DB), Redis, Docker, Gitlab CI',
         'year': 'c 2013',
@@ -36,8 +35,23 @@ const projects = {
         ]
     },
     'ClienD frontend': {
-        'link': 'http://cliend.ru',
+        'link': 'http://app.cliend.ru',
         'text': '<p>Веб-приложение</p>',
+        'tech': 'HTML, CSS (Bootstrap), JavaScript (jQuery), gulp',
+        'year': 'c 2013',
+        'people': [
+            {...artur, post: 'Главный разработчик, дизайнер, системный администратор'},
+            {...timur, post: 'Руководитель проекта, разработчик'},
+            {
+                'name': 'Савелий Красовский',
+                'link': 'https://krasovsky.me/',
+                'post': 'Дизайнер'
+            }
+        ]
+    },
+    'ClienD.ru': {
+        'link': 'http://cliend.ru',
+        'text': '<p>Главный сайт ClienD с информацией о всех подпроектах и приложениях</p>',
         'tech': 'HTML, CSS (Bootstrap), JavaScript (jQuery), gulp',
         'year': 'c 2013',
         'people': [
