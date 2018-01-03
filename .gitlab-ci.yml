@@ -21,7 +21,7 @@ deploy:
   script:
     - docker pull registry.gitlab.com/cliend/site:latest
     - docker-compose stop
-    - docker-compose rm
+    - docker-compose rm -f
     - docker-compose up -d
   only:
     - master
