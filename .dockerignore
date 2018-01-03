@@ -1,7 +1,3 @@
 .idea
-public
-!/public/static/images/**/**
-!/public/js/**
-!/public/manifest.json
-!/public/robots.txt
+public/static/styles
 node_modules

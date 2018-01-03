@@ -18,7 +18,7 @@ const templateData = {
 const readFile = filename => fs.readFileSync('./templates/'+filename+'.hbs').toString();
 
 Handlebars.registerHelper('getKeyFromName', function(options) {
-    return options.fn(this).replace(' ', '-');
+    return options.fn(this).toLocaleLowerCase().replace(' ', '-');
 });
 
 
