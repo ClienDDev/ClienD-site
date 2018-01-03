@@ -8,11 +8,10 @@
     "url": "https://gitlab.org/ClienD/web.git"
   },
   "author": "ClienDDev team",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.1",
     "gulp-serve": "^1.4.0",
     "gulp-cssnano": "^2.1.0",
     "gulp-header": "^1.7.1",

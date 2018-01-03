@@ -9,7 +9,7 @@ const projects = require('../data/projects');
 const templateData = {
     year: (new Date()).getFullYear(),
     version: packageJson.version,
-    static_host: config.static_host,
+    static_host: '',
     api_host: config.api_host,
     app_host: config.app_host,
     projects
