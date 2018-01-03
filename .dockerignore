@@ -3,4 +3,5 @@ public
 !/public/static/images/**/**
 !/public/js/**
 !/public/manifest.json
+!/public/robots.txt
 node_modules
