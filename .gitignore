@@ -1,5 +1,5 @@
 .idea
 public
-!public/images
-!public/js
+!/public/static/images/**/**
+!/public/js/**
 node_modules
