@@ -1,0 +1,25 @@
+{
+  "name": "ClienD-site",
+  "version": "10.0.0",
+  "description": "Site",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.org/ClienD/web.git"
+  },
+  "author": "ClienDDev team",
+  "license": "ISC",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-serve": "^1.4.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-header": "^1.7.1",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "handlebars": "^4.0.11",
+    "moment": "^2.20.1"
+  }
+}

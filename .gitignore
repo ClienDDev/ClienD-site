@@ -1,0 +1,5 @@
+.idea
+public
+!public/images
+!public/js
+node_modules

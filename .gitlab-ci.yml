@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+before_script:
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+
+build:
+  stage: build
+  script:
+    - docker build -t registry.gitlab.com/cliend/site:latest .
+    - docker push registry.gitlab.com/cliend/site:latest
+  only:
+    - master
+  tags:
+    - docker
+    - s4.clienddev.ru
+
+deploy:
+  stage: deploy
+  script:
+    - docker pull registry.gitlab.com/cliend/site:latest
+    - docker-compose stop
+    - docker-compose rm
+    - docker-compose up -d
+  only:
+    - master
+  tags:
+    - docker
+    - s3.clienddev.ru

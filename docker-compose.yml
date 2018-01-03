@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  web:
+    image: nginx:1.12-alpine
+    restart: always
+    ports:
+      - 80
+    volumes_from:
+      - app
+    networks:
+      - web
+      - project
+    environment:
+      VIRTUAL_HOST: app.cliend.ru
+
+  app:
+    image: registry.gitlab.com/cliend/site:latest
+    volumes:
+      - /app/public
+      - /etc/nginx/conf.d
+    networks:
+      - project
+
+networks:
+  web:
+    external: true
+  project:

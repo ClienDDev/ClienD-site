@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content" style="padding-top: 15px;">
+        <a href="/" class="btn btn-primary btn-block btn-lg">
+            <i class="fa fa-arrow-left"></i>
+            Войти в приложение ClienD
+        </a>
+    </div>
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
+        <h1>Об информационной системе ClienD</h1>
+        <p>
+            <a href="/">ClienD</a> не является коммерческим проектом. Все работы по разработке и поддержке
+            информационной системы осуществляются на бесплатной основе
+            <a href="http://clienddev.ru" target="_blank">командой разработчиков ClienDDev</a>.
+            Все деньги, полученные с <a href="http://ads.cliend.ru" target="_blank">рекламы</a>, уходят на обслуживание и
+            поддержку серверной инфраструктуры.
+            Часть подпроектов изначально являются проектами с открытым исходным кодом, и выложены на
+            <a href="http://github.com/ClienDDev" target="_blank">Github</a>.
+        </p>
+
+        <p>
+            Выкладывание основной части исходного кода проекта в открытый доступ привело бы к возросшему
+            количеству запросов на портал
+            <a href="http://edu.tatar.ru" rel="nofollow" target="_blank">“Электронное образование в РТ”</a>,
+            поэтому команда ClienDDev принципиально не публикует никакие исходные тексты основной части
+            проекта.
+        </p>
+
+        <p>
+            Изначально
+            <a href="http://atnartur.ru/posts/2016/clienddev/" target="_blank">проект создавался</a>
+            с целью решения собственных проблем. Затем проект стал площадкой
+            для получения уникального опыта по разработке и поддержке высоконагруженных приложений.
+        </p>
+
+        <p>
+            Пользователи видят обычно только один проект - то приложение, которым они пользуются.
+            На самом деле, информационная система проектов ClienD не ограничивается одним приложением.
+            Внизу полный список проектов, которые были разработаны за эти годы.
+        </p>
+
+        <h1 style="text-align: left;">Проекты</h1>
+
+        <div class="list-group">
+            {{#each projects}}
+                <a href="#{{#getKeyFromName}}{{@key}}{{/getKeyFromName}}" class="list-group-item" style="font-weight: bold; font-size: 1.3em; color: #0099cc;">
+                    {{@key}}
+                </a>
+            {{/each}}
+        </div>
+
+        {{#each projects}}
+            <h2 class="page-header" id="<?=getKeyFromName($projectName)?>">
+                {{#if link}}
+                    <a href="{{link}}" target="_blank">
+                        {{@key}}
+                    </a>
+                {{/if}}
+                {{#unless link}}
+                    {{@key}}
+                {{/unless}}
+            </h2>
+
+            {{{text}}}
+            <p>
+                {{#if tech}} <b>Технологии:</b>  {{tech}}<br> {{/if}}
+                {{#if year}} <b>Годы реализации:</b> {{year}} <br> {{/if}}
+            </p>
+            {{#if people}}
+                <p><b>Авторы:</b></p>
+                <div class="list-group">
+                    {{#each people}}
+                        <a href="{{link}}" class="list-group-item" target="_blank">
+                            <b>{{name}}</b>
+                            {{#if post}}
+                                - {{post}}
+                            {{/if}}
+                        </a>
+                    {{/each}}
+                </div>
+            {{/if}}
+            <hr>
+        {{/each}}
+    </div>
+</div>

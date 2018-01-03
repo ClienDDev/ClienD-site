@@ -1,0 +1,105 @@
+@mw: 767px;
+
+@media (max-width: @mw){
+    .sidebar{
+        overflow: hidden;
+        width:100%;
+        float:none !important;
+        position:relative !important;
+        
+        .nav{
+            overflow: hidden;
+            margin-bottom:0;
+            
+            li{
+                float:left;
+                
+                &.logo{
+                    font-size:200%;
+                    float: none;
+                    
+                    a{
+                        &:hover{
+                            background: darken(@brand-color, 10%);
+                        }
+                    }
+                    
+                    .fa{
+                        line-height: 40px;
+                    }
+                }
+            }
+            
+            &#account_manager{
+                margin-top:0;
+                
+                li{
+                    float:none;
+                    
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+            &#tabs{
+                
+                li{
+                    width:33.33333%;
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+            &#system{
+                position: absolute;
+                top: 0;
+                right: 10px;
+                
+                li{
+                    a{
+                        .text{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &#app_footer{
+                display: none !important;
+            }
+        }
+    }
+    #app_layout #app_footer{
+        display: block;
+    }
+}
+
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+@media (min-width: @mw) {
+    .sidebar {
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        padding: 20px;
+        padding-top:0;
+        padding-bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+        #app_footer{
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
