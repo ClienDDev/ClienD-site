@@ -15,7 +15,7 @@ $(document).ready(function() {
                 console.log('app loaded');
                 w.postMessage({cliendLogin: {login: login, pass: pass}}, url);
                 w.focus();
-                // window.close();
+                window.close();
             }, 500);
         });
     })
