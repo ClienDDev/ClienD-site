@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log('Интересно, как работает ClienD? Хочешь поработать с нами? Напиши - artur@clienddev.ru');
     $('#loginform').submit(function(e){
         e.preventDefault();
         const $this = $(this);
