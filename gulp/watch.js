@@ -5,7 +5,6 @@ gulp.task('watch', function(){
     livereload.listen();
     const cb = () => livereload.reload();
 
-    gulp.watch(mobile3_js, ['uglify-app3', cb]);
     gulp.watch('./static/js/mobile3/base.js', ['uglify-base3', cb]);
     gulp.watch('./static/styles/mobile3/*.less', ['less-main3', cb]);
     gulp.watch('./static/styles/mobile3/bootstrap/*', ['less-bootstrap', cb]);
