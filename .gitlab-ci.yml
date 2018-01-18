@@ -27,4 +27,4 @@ deploy:
     - master
   tags:
     - docker
-    - s3.clienddev.ru
+    - s4.clienddev.ru
