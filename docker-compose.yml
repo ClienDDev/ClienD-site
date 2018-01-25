@@ -5,12 +5,20 @@ services:
     image: nginx:1.12-alpine
     restart: always
     ports:
-      - 81:80
+      - 80
     volumes_from:
       - app
+    networks:
+      - web
+    environment:
+      VIRTUAL_HOST: site.cliend.ru
 
   app:
     image: registry.gitlab.com/cliend/site:latest
     volumes:
       - /app/public
       - /etc/nginx/conf.d
+
+networks:
+  web:
+    external: true
