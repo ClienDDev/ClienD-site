@@ -121,11 +121,11 @@ const projects = {
         'year': 'c 2016',
         'people': [artur]
     },
-    'Рекламная система': {
+    'Рекламная система (1 версия)': {
         'text': '<p>Система для показа рекламы в приложениях</p>',
         'tech': 'HTML, CSS (Bootstrap), JavaScript (jQuery), PHP5 (Phalcon 2), MySQL',
         'link': 'https://github.com/braska/SimpleBannerRotator',
-        'year': 'c 2015',
+        'year': '2015-2017',
         'people': [
             {
                 'name': 'Данил Агафонов',
@@ -134,7 +134,22 @@ const projects = {
             },
             artur
         ]
-        },
+    },
+    'Рекламная система (2 версия)': {
+        'text': '<p>Система для показа рекламы в приложениях - обновленная версия. Ушли проблемы с перегрузками базы' +
+        'данных во время подсчета статистики.</p>',
+        'tech': 'HTML, CSS (Bootstrap), JavaScript (jQuery), .NET Core 2, ASP.NET Core, Entity Framework Core, Handlebars, MySQL',
+        'link': 'https://github.com/atnartur/ads-system',
+        'year': 'c 2017',
+        'people': [
+            artur,
+            {
+                'name': 'Данила Бутин',
+                'link': 'https://vk.com/id176956071',
+                'post': '.NET-разработчик'
+            }
+        ]
+    },
     'Crossplatform parser': {
         'text': '<p>Реализация парсера вместе с выполнением сетевых запросов на edu.tatar.ru. Библиотека встраивается в мобильные приложения и в серверную часть.</p>',
         'tech': 'Java 8, Gradle, J2ObjC',
