@@ -67,14 +67,14 @@ const projects = {
     'ClienD for Android': {
         'link': 'http://android.cliend.ru',
         'text': '<p>Android-приложение</p>',
-        'tech': 'Java 8, Gradle',
+        'tech': 'Java 8, Robospice',
         'year': 'c 2014',
         'people': [ilya]
     },
     'ClienD for iOS': {
-        'link': 'http://android.cliend.ru',
+        'link': 'http://ios.cliend.ru',
         'text': '<p>iOS-приложение</p>',
-        'tech': 'Swift 4, Realm',
+        'tech': 'Swift 4, J2ObjC',
         'year': 'c 2014',
         'people': [bulat]
     },
