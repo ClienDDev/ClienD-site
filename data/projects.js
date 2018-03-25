@@ -116,7 +116,7 @@ const projects = {
         'people': [artur]
     },
     'ClienD stat': {
-        'text': '<p>Сайт со статистикой</p>',
+        'text': '<p>Внутренняя система статистики приложений ClienD</p>',
         'tech': 'HTML, CSS (Bootstrap, Admin LTE), JavaScript (jQuery, moment, highcharts), PHP5 (Phalcon 2), MySQL',
         'year': 'c 2016',
         'people': [artur]
@@ -151,7 +151,8 @@ const projects = {
         ]
     },
     'Crossplatform parser': {
-        'text': '<p>Реализация парсера вместе с выполнением сетевых запросов на edu.tatar.ru. Библиотека встраивается в мобильные приложения и в серверную часть.</p>',
+        'text': '<p>Реализация парсера вместе с выполнением сетевых запросов на edu.tatar.ru. ' +
+        'Библиотека встраивается в мобильные приложения и в серверную часть.</p>',
         'tech': 'Java 8, Gradle, J2ObjC',
         'year': 'c 2017',
         'people': [artur, ilya, bulat]
@@ -175,7 +176,8 @@ const projects = {
         'people': [artur]
     },
     'last visit worker': {
-        'text': '<p>По ночам собирает статистику из базы данных, складывает в определенное место для сайта статистики и отправляет информацию в Telegram.</p>',
+        'text': '<p>По ночам собирает статистику из базы данных, складывает в определенное место для сайта статистики' +
+        'и отправляет информацию в Telegram.</p>',
         'year': 2016,
         'tech': 'NodeJS (node-telegram-bot-api)',
         'people': [artur]
