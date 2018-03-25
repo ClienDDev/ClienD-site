@@ -1,25 +1,8 @@
 <div class="row">
-    <a
-        target="_blank"
-        href="http://vk.com/cliend"
-        class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 btn btn-danger"
-        style="white-space: normal; max-width: 100%; display: block;"
-    >
-        <b>Наблюдаются проблемы с работой приложения</b>
-        Нажмите здесь, чтобы узнать подробности
-    </a>
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
-        <h2>Вход</h2>
-        <form action="" method="post" id="loginform">
-            <input type="text" required id="login" class="form-control input-lg" placeholder="Логин от edu.tatar.ru">
-            <input type="password" required id="pass" class="form-control input-lg" placeholder="Пароль от edu.tatar.ru">
-            <button class="btn-lg btn btn-primary btn-block" id="auth">Войти</button>
-        </form>
-    </div>
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
+    <div class="col-sm-12 content">
         <div class="row">
-            <div class="col-md-6 apps text-center">
-                <h2>Скачать приложение</h2>
+            <div class="col-md-12 text-center">
+                <h2>Скачать мобильные приложения</h2>
                 <a href="http://ios.cliend.ru" target="_blank" id="ios_button">
                     <img src="/static/images/appstore.svg" height="60" title="Скачать iOS-приложение" alt="Скачать iOS-приложение">
                 </a>
@@ -27,37 +10,50 @@
                     <img src="/static/images/google-play-badge2.png" title="Скачать Android-приложение" alt="Скачать Android-приложение">
                 </a>
             </div>
-            <div class="col-md-6 subscribe text-center">
+            <div class="col-md-12 text-center subscribe">
                 <h2>Подпишитесь на нас</h2>
-                <div class="btn-group-vertical btn-group-lg">
+                <div class="btn-group-lg">
                     <a class="btn btn-default btn-tw" target="_blank" title="Twitter" href="http://twitter.com/cliend4edu" id="twitter_button">
                         <i class="fa fa-twitter fa-lg tw"></i> Твиттер
                     </a>
-                    <a class="btn btn-default btn-vk" target="_blank" title="ВКонтакте"  href="http://vk.com/cliend" id="vk_button">
+                    <a class="btn btn-default btn-vk" target="_blank" title="ВКонтакте" href="http://vk.com/cliend" id="vk_button">
                         <i class="fa fa-vk fa-lg vk"></i> ВКонтакте
                     </a>
-                    <a class="btn btn-default btn-instagram" target="_blank" title="Instagram"  href="http://instagram.com/cliend_app" id="instagram_button">
+                    <a class="btn btn-default btn-instagram" target="_blank" title="Instagram" href="http://instagram.com/cliend_app" id="instagram_button">
                         <i class="fa fa-instagram fa-lg instagram"></i> Instagram
                     </a>
                 </div>
             </div>
-        </div>
-
-        <hr>
-
-        <div class="row projects">
-            <div class="col-md-6">
-                <h1>Расширение ClienD</h1>
-                <p>Упрощает и ускоряет<br>выставление оценок</p>
-                <a href="http://ext.cliend.ru" class="btn btn-primary btn-lg" target="_blank" id="ext_button"><i class="fa fa-download"></i> Установить</a>
+            <div class="col-md-12">
+                <hr>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
+                <h2>Вход в веб-приложение</h2>
+                <a
+                        target="_blank"
+                        href="http://vk.com/cliend"
+                        class="btn btn-danger"
+                        style="white-space: normal; max-width: 100%; display: block;"
+                >
+                    <b>Есть проблемы с работой веб-приложения</b><br>
+                    Рекомендуется пользоваться мобильными приложениями
+                </a>
+                <form action="" method="post" id="loginform">
+                    <input type="text" required id="login" class="form-control input-lg" placeholder="Логин от edu.tatar.ru">
+                    <input type="password" required id="pass" class="form-control input-lg" placeholder="Пароль от edu.tatar.ru">
+                    <button class="btn-lg btn btn-primary btn-block" id="auth">Войти</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-center">
+                <h1>Расширение ClienD</h1>
+                <p>Упрощает и ускоряет выставление оценок</p>
+                <a href="http://ext.cliend.ru" class="btn btn-primary btn-lg" target="_blank" id="ext_button"><i class="fa fa-download"></i> Установить</a>
+
                 <h1>ClienD proxy</h1>
-                <p>настраивает прокси-севера edu.tatar.ru<br>на Linux</p>
+                <p>настраивает прокси-севера edu.tatar.ru на Linux</p>
                 <a href="http://proxy.cliend.ru" class="btn btn-primary btn-lg" target="_blank" id="proxy_button"><i class="fa fa-external-link"></i> Перейти</a>
             </div>
-            <div class="col-md-12">
-                <br>
+            <div class="col-md-12" style="margin-top: 10px">
                 <a href="/projects" class="btn btn-primary btn-block btn-lg">
                     <i class="fa fa-external-link"></i> Все проекты ClienD
                 </a>

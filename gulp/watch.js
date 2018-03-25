@@ -8,4 +8,5 @@ gulp.task('watch', function(){
     gulp.watch('./static/js/mobile3/base.js', ['uglify-base3', cb]);
     gulp.watch('./static/styles/mobile3/*.less', ['less-main3', cb]);
     gulp.watch('./static/styles/mobile3/bootstrap/*', ['less-bootstrap', cb]);
+    gulp.watch('./templates/*', ['template', cb]);
 });
