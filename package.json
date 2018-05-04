@@ -12,13 +12,13 @@
   "devDependencies": {
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.0",
-    "gulp-serve": "^1.4.0",
-    "gulp-cssnano": "^2.1.0",
-    "gulp-header": "^1.7.1",
-    "gulp-less": "^3.3.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-header": "^2.0.5",
+    "gulp-less": "^3.5.0",
     "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
+    "gulp-serve": "^1.4.0",
     "handlebars": "^4.0.11",
-    "moment": "^2.20.1"
+    "moment": "^2.22.1"
   }
 }
