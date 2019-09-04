@@ -11,7 +11,9 @@ services:
     networks:
       - web
     environment:
-      VIRTUAL_HOST: site.cliend.ru
+      VIRTUAL_HOST: cliend.ru
+      LETSENCRYPT_HOST: cliend.ru
+      LETSENCRYPT_EMAIL: artur@clienddev.ru
 
   app:
     image: registry.gitlab.com/cliend/site:latest
