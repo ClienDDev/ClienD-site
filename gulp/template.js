@@ -39,4 +39,6 @@ gulp.task('template', () => {
 
     renderPage('index');
     renderPage('projects');
+    renderPage('projects');
+    renderPage('android_policy');
 });
