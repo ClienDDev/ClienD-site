@@ -1,0 +1,134 @@
+html {
+ font-family:sans-serif;
+ -ms-text-size-adjust:100%;
+ -webkit-text-size-adjust:100%
+}
+* {
+ margin: 0;
+ padding: 0;	
+}
+*,
+:after,
+:before {
+ box-sizing:border-box
+}
+html {
+ font-size:10px;
+ -webkit-tap-highlight-color:transparent
+}
+body {
+ font-family:Roboto,Open Sans,Helvetica,Arial,sans-serif;
+ font-size:14px;
+ line-height:1.42857143;
+ color:#333;
+ background-color:#fff;
+}
+a {
+ color:#09c;
+ text-decoration:none;
+}
+.text-left {
+ text-align:left
+}
+.text-center {
+ text-align:center
+}
+.container {
+ margin: 0 auto;
+ max-width: 970px;
+ padding: 20px;
+ background: white;
+ margin-bottom: 20px;
+}
+
+#login_layout {
+ background:#09c;
+ position:fixed;
+ top:0;
+ bottom:0;
+ width:100%;
+ overflow-y:auto
+}
+#login_layout .content {
+ overflow:hidden;
+ padding-bottom:15px;
+ background:#fff;
+ position:relative;
+ z-index:1;
+ box-shadow:0 2px 15px rgba(0,0,0,.26);
+ margin-top:15px
+}
+#login_layout .content:first-child {
+ margin-top:0
+}
+header a {
+    background: url(logo.png) center center no-repeat;
+    display: block;
+    height: 200px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: transparent;
+}
+#login_layout header #logo {
+ margin:0;
+ font-weight:300;
+ text-align:center;
+ color:transparent;
+ font-family:Segoe UI,Open Sans,sans-serif;
+ font-size:10em;
+ position:relative;
+ z-index:1
+}
+@media (max-width:992px) {
+ #login_layout header #logo {
+  font-size:8em
+ }
+}
+@media (max-width:350px) {
+ #login_layout header #logo {
+  font-size:6em
+ }
+}
+#login_layout header h2 {
+ font-size:150%;
+ text-align:center;
+ color:#fff;
+ font-weight:300;
+ z-index:2
+}
+#login_layout h1 {
+ font-size:2.9em
+}
+#login_layout h2 {
+ font-size:2.5em
+}
+#login_layout h3 {
+ font-size:2em
+}
+#login_layout h1,
+#login_layout h2,
+#login_layout h3 {
+ text-align:center;
+ font-weight:100
+}
+#login_layout p {
+ font-size:1.3em
+}
+#login_layout footer {
+ font-size:120%;
+ background:#09c!important;
+ color:#fff;
+ text-align:center;
+ font-weight:700;
+ box-shadow:none!important;
+ position:relative;
+ z-index:1
+}
+#login_layout footer a {
+ color:#fff;
+ text-decoration:none
+}
+#login_layout footer a:hover {
+ text-decoration:underline
+}
